@@ -1,0 +1,196 @@
+body {
+      background-color: #C5EDFF;
+      margin: 0;
+      padding: 0;
+
+}
+.banner {
+  width: 100%;
+  height: auto;
+  animation: fadeIn 4s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.banner-link {
+  position: absolute;
+  top: 5px;
+  right: 30px;
+  color: rgb(246, 163, 255);
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: bold;
+  background-color: rgb(255, 255, 255);
+  padding: 8px 14px;
+  border-radius: 30px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.banner-link:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: rgb(163, 240, 255);
+  transform: scale(1.05);
+}
+
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee-content {
+  font-family: "Crafty Girls", cursive;
+  font-weight: normal;
+  font-style: normal;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  color: #ed91ff;
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 25s linear infinite;
+}
+
+.marquee-content:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+.kath {
+  width:300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  border-color: aquamarine;
+}
+
+.Katherine {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size:x-large;
+  font-weight: normal;
+  text-align: center;
+  color: black;
+  padding: 0 40px;
+}
+
+.timeline {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.timeline h2 {
+  font-size: 60px;
+  text-align: center;
+  color: #ed91ff;
+  margin-bottom: 40px;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.timeline-dot {
+  width: 16px;
+  height: 16px;
+  background-color: #ed91ff;
+  border-radius: 50%;
+  margin-right: 20px;
+  margin-top: 8px;
+  flex-shrink: 0;
+}
+
+.timeline-content {
+  background-color: #f9f2fbca;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  background-color: #ddd;
+  z-index: -1;
+}
+
+.marie1 {
+  width:400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  border-color: aquamarine;
+}
+
+ul {
+  list-style-position: inside;
+  text-align: center;
+  padding: 0;
+}
+
+ul li {
+  font-size: 1.6rem;
+  margin: 10px 0;
+}
+
+.fun-facts {
+  text-align: center;
+  margin: 60px auto;
+}
+
+.facts-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.fact-card {
+  background: #C5EDFF;
+  border-radius: 40%;
+  padding: 30px;
+  width: 250px;
+  font-size: 1.75rem;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  transition: transform 0.3s;
+}
+
+.fact-card:hover {
+  transform: translateY(-10px);
+}
+
+h1.Life {
+  font-family: "Crafty Girls", cursive;
+  font-weight: normal;
+  font-style: normal;
+  text-align: center;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  color: #ed91ff;
+}
